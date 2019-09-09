@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## [Demo](https://kiddhustle.github.io/thomson-reuters-test/)
+## [Demo - https://kiddhustle.github.io/thomson-reuters-test/](https://kiddhustle.github.io/thomson-reuters-test/)
 
 
 # Medal Count Widget
