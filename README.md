@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## [Demo](https://kiddhustle.github.io/thomson-reuters-test/)
+
+
 # Medal Count Widget
 The widget is meant to be embedded on client’s websites during the Olympic
 games. The widget shows up to 10 countries that have won the most medals of a
