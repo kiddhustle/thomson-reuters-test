@@ -4,13 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-window.widget = {
-  initialize: function (container, sortBy) {
-    ReactDOM.render(<App sort={sortBy}/>, document.getElementById(container));
+const widget = {
+  initialize: function (container: string, sortBy: string) {
+    ReactDOM.render(
+      <App sort={sortBy}/>, document.getElementById(container)
+      );
   }
 }
 
-window.widget.initialize('root', 'gold')
+widget.initialize('root', 'gold')
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
