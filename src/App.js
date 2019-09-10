@@ -1,6 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
-import flags from './flags.png';
 import './App.css';
 
 const DATA_URI = 'https://s3-us-west-2.amazonaws.com/reuters.medals-widget/medals.json'
@@ -86,7 +84,7 @@ class App extends React.Component {
       return (
         <div className="App" id={id} sort={sort}>
         <h2 className="medalsheader">Medal Count</h2>
-          <table className="medalstable">
+          <table className="medalstable" data-qa="medalstable">
             <thead>
               <tr>
                 <th scope="col"></th>
@@ -125,7 +123,7 @@ class App extends React.Component {
             </thead>
             <tbody>
             {data && this.getSortedData(data, sortBy).slice(0, 10).map((country, i) => (
-              <tr key={country.code}>
+              <tr key={country.code} data-qa-country-row={country.code}>
                 <td>{i + 1}</td>
                 <td className="medalstable__country">
                   <span className={`flag flag--${country.code}`} /> {country.code}
