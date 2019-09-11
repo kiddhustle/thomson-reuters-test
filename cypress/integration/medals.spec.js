@@ -6,6 +6,7 @@ describe('App rendering', function() {
 
   it('renders the medals table', () => {
     cy.get('[data-qa="medalstable"]').should('exist')
+    cy.screenshot()
   })
 })
 
@@ -19,6 +20,7 @@ describe('Medals table sorting', () => {
         expect($countries[1].getAttribute('data-qa-country-row')).to.equal('NOR')
         expect($countries[2].getAttribute('data-qa-country-row')).to.equal('CAN')
       })
+      cy.screenshot()
     })
   })
 
@@ -31,6 +33,7 @@ describe('Medals table sorting', () => {
         expect($countries[1].getAttribute('data-qa-country-row')).to.equal('CAN')
         expect($countries[2].getAttribute('data-qa-country-row')).to.equal('AUT')
       })
+      cy.screenshot()
     })
   })
 
@@ -43,6 +46,7 @@ describe('Medals table sorting', () => {
         expect($countries[1].getAttribute('data-qa-country-row')).to.equal('NOR')
         expect($countries[2].getAttribute('data-qa-country-row')).to.equal('RUS')
       })
+      cy.screenshot()
     })
   })
 
@@ -55,6 +59,7 @@ describe('Medals table sorting', () => {
         expect($countries[1].getAttribute('data-qa-country-row')).to.equal('USA')
         expect($countries[2].getAttribute('data-qa-country-row')).to.equal('NOR')
       })
+      cy.screenshot()
     })
   })
 
