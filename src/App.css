@@ -1,16 +1,31 @@
+:root {
+  --color-light-grey: #ddd;
+  --color-dark-grey: #1d1d1d;
+  --color-mid-grey: #808080;
+}
+
 .App {
   text-align: center;
 }
 
 .medalsheader {
   text-align: left;
+  color: var(--color-mid-grey);
+  text-transform: uppercase;
 }
 .medalstable {
-  color: #1d1d1d;
+  color: var(--color-mid-grey);
 }
 
 .medalstable__country {
+  font-weight: bold;
   text-align: left;
+}
+
+.medalstable__text {
+  height: 1rem;
+  vertical-align: middle;
+  margin-right: 2rem;
 }
 
 .medal-icon {
@@ -18,7 +33,7 @@
   height: 1rem;
   width: 1rem;
   display: inline-block;
-
+  vertical-align: middle;
 }
 
 .medal-icon--gold {
@@ -38,6 +53,8 @@
   display: inline-block;
   height: 17px;
   width: 28px;
+  margin-right: 0.5rem; 
+  vertical-align: middle;
 }
 
 .flag--AUT {
@@ -95,7 +112,6 @@
 table {
   /* min-width: 80%; */
   border-collapse: collapse;
-  color: #ddd;
 }
 
 tbody {
@@ -106,9 +122,17 @@ tbody {
 
 th, td {
   padding: 0.25rem;
-  border-bottom: #ddd solid 1px;
+}
+
+td {
+  border-bottom: var(--color-light-grey) solid 1px;
+}
+
+th {
+  border-bottom: var(--color-mid-grey) solid 2px;
+  color: var(--color-mid-grey);
 }
 
 .sorted {
-  border-top: #ddd 2px solid;
+  border-top: var(--color-mid-grey) 2px solid;
 }

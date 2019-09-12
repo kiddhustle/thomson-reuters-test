@@ -50,13 +50,16 @@ class App extends React.Component<AppProps, {}> {
          isLoading: false
        })
      } catch(e) {
-       this.setState({errorLoading: true})
+       this.setState({
+        isLoading: false,
+        errorLoading: true
+        })
      }
 
   }
 
   getSortedData (data: Country[] | undefined, sortBy: string) {
-    data = data != undefined ? data : this.state.data
+    data = data !== undefined ? data : this.state.data
     const clonedData = JSON.parse(JSON.stringify(data))
 
     clonedData.sort((a: any, b: any) => {
@@ -88,13 +91,11 @@ class App extends React.Component<AppProps, {}> {
   }
 
   render (): React.ReactElement<any> {
-    const {sort} = this.props
     const {isLoading, errorLoading, data, sortBy} = this.state
 
     if(isLoading ) {
       return (<p>Currently loading..</p>)
-    }
-    if(errorLoading) {
+    } else if(errorLoading) {
       return (<p>Error loading results. Please contact a site admin</p>)
     } else {
       return (
@@ -142,7 +143,8 @@ class App extends React.Component<AppProps, {}> {
               <tr key={country.code} data-qa-country-row={country.code}>
                 <td>{i + 1}</td>
                 <td className="medalstable__country">
-                  <span className={`flag flag--${country.code}`} /> {country.code}
+                  <span className={`flag flag--${country.code}`} />
+                  <span className="medalstable__text">{country.code}</span>
                 </td>
                 <td>{country.gold}</td>
                 <td>{country.silver}</td>
