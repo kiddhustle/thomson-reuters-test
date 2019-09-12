@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/thomson-reuters-test/precache-manifest.5c98eeac213dbe8052d2e83cc61abfd0.js"
+  "/thomson-reuters-test/precache-manifest.6994f8053bdf965559386370ba05c6fc.js"
 );
 
 self.addEventListener('message', (event) => {

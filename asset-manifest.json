@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/thomson-reuters-test/static/css/main.4a3f3e36.chunk.css",
-    "main.js": "/thomson-reuters-test/static/js/main.57db4a1d.chunk.js",
-    "main.js.map": "/thomson-reuters-test/static/js/main.57db4a1d.chunk.js.map",
+    "main.css": "/thomson-reuters-test/static/css/main.2fb27108.chunk.css",
+    "main.js": "/thomson-reuters-test/static/js/main.ea5482b7.chunk.js",
+    "main.js.map": "/thomson-reuters-test/static/js/main.ea5482b7.chunk.js.map",
     "runtime~main.js": "/thomson-reuters-test/static/js/runtime~main.8bec5e0b.js",
     "runtime~main.js.map": "/thomson-reuters-test/static/js/runtime~main.8bec5e0b.js.map",
     "static/js/2.aef7f414.chunk.js": "/thomson-reuters-test/static/js/2.aef7f414.chunk.js",
     "static/js/2.aef7f414.chunk.js.map": "/thomson-reuters-test/static/js/2.aef7f414.chunk.js.map",
     "index.html": "/thomson-reuters-test/index.html",
-    "precache-manifest.5c98eeac213dbe8052d2e83cc61abfd0.js": "/thomson-reuters-test/precache-manifest.5c98eeac213dbe8052d2e83cc61abfd0.js",
+    "precache-manifest.6994f8053bdf965559386370ba05c6fc.js": "/thomson-reuters-test/precache-manifest.6994f8053bdf965559386370ba05c6fc.js",
     "service-worker.js": "/thomson-reuters-test/service-worker.js",
-    "static/css/main.4a3f3e36.chunk.css.map": "/thomson-reuters-test/static/css/main.4a3f3e36.chunk.css.map",
-    "static/media/logo.svg": "/thomson-reuters-test/static/media/logo.5d5d9eef.svg"
+    "static/css/main.2fb27108.chunk.css.map": "/thomson-reuters-test/static/css/main.2fb27108.chunk.css.map"
   }
 }
